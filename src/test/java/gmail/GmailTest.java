@@ -36,7 +36,7 @@ public class GmailTest extends BaseTest {
             email = $(byName(nameFrom)).getAttribute("email");
             quantityLetters = $$(byName(nameFrom)).size() / 2;
         });
-        email = "evg.das@gmail.com";
+
         parameter("Количество писем: ", quantityLetters);
         parameter("Обратный адрес:", email);
 
