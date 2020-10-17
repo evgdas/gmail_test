@@ -23,7 +23,6 @@ public class BaseTest {
                 .screenshots(true));
     }
 
-
     @AfterEach
     public void afterEach() {
         String sessionId = getSessionId();

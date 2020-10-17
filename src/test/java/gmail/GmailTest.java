@@ -36,16 +36,15 @@ public class GmailTest extends BaseTest {
             email = $(byName(nameFrom)).getAttribute("email");
             quantityLetters = $$(byName(nameFrom)).size() / 2;
         });
-
+        email = "evg.das@gmail.com";
         parameter("Количество писем: ", quantityLetters);
         parameter("Обратный адрес:", email);
 
         step("Отправка письма", () -> {
             $(byText("Написать")).click();
             $(byName("to")).val(email).pressTab();
-            $(byName("subjectbox")).val("Letter from qatest!").pressTab();
-
-            $(".editable").val("Quantity is " + quantityLetters).pressEnter();
+            $(byName("subjectbox")).val("Тестовое задание Дашук").pressTab();
+            $(".editable").val("Количество писем = " + quantityLetters).pressEnter();
             $(byText("Отправить")).click();
 
             $(withText("Письмо отправлено")).shouldBe(visible);
