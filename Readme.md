@@ -15,9 +15,6 @@ Java, Gradle, Allure, Junit5, Selenide
         - установить через системные свойства параметр remote_driver_url  
         - установить через системные свойства параметр video_storage_url
 
-Примеры запуска:  
-gradle clean gmail -Dgmail.nameFrom=Name -Dgmail.username=login -Dgmail.password=pass -Dremote_driver_url= -Dvideo_storage_url=
-
 
 К тесту в отчете прикладываются последние скриншоты, видео выполнения и логи.  
 
