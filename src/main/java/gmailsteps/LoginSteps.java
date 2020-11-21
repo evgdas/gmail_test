@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class LoginSteps {
     @Step("Логин на gmail.com")
     public static void loginToGmail(String userName, String password) {
-        open("https://gmail.com");
+        open("https://accounts.google.com/");
         $("#identifierId").val(userName).pressEnter();
         $("#password input").val(password).pressEnter();
     }
